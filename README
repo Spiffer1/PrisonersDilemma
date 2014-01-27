@@ -1,0 +1,3 @@
+Conducts an Iterated Prisoner's Dilemma. Initially, the decision algorithms
+will be hard coded. The next step will hopefully create a runner class that
+will use any compiled algorithms that appear in the "plugins" directory.

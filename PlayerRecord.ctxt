@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PlayerRecord()
+comment1.params=
+comment1.target=int\ getScore()
+comment2.params=sc
+comment2.target=void\ addToScore(int)
+numComments=3

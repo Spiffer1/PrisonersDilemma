@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=num
+comment0.target=TitForTat(int)
+comment1.params=history\ moveNum
+comment1.target=java.lang.String\ pickMove(java.lang.String[],\ int)
+numComments=2
