@@ -1,31 +1,16 @@
-public class BigGrudge implements Player
+public class BigGrudge implements PDPlayer
 {
-    private int playerNum;
     private boolean grudge;
-    public BigGrudge(int num)
+    public BigGrudge()
     {
-        playerNum = num;
         grudge = false;
     }
 
-    public String pickMove(String[] history, int moveNum)
+    public String chooseCorD(String opponentsLastMove)
     {
-        if (moveNum > 0)
+        if (opponentsLastMove.equals("d"))
         {
-            int opponentNum;
-            if (playerNum == 0)
-            {
-                opponentNum = 1;
-            }
-            else
-            {
-                opponentNum = 0;
-            }
-            String opponentLastMove =  history[moveNum - 1].substring(opponentNum, opponentNum + 1);
-            if (opponentLastMove.equals("d"))
-            {
-                grudge = true;
-            }
+            grudge = true;
         }
         if (grudge)
         {
@@ -35,6 +20,14 @@ public class BigGrudge implements Player
         {
             return "c";
         }
+    }
+    public String getAuthor()
+    {
+        return "Mr. Fottrell";
+    }
+    public String toString()
+    {
+        return "Cooperates until the other player defects. After that, BigGrudge always defects.";
     }
 }
 

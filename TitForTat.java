@@ -1,28 +1,26 @@
-public class TitForTat implements Player
+public class TitForTat implements PDPlayer
 {
-    private int playerNum;
-    public TitForTat(int num)
+    public TitForTat()
     {
-        playerNum = num;
     }
-    public String pickMove(String[] history, int moveNum)
+    public String chooseCorD(String opponentsLastMove)
     {
-        if (moveNum > 0)
+        if (opponentsLastMove.equals("d"))
         {
-            int opponentNum;
-            if (playerNum == 0)
-            {
-                opponentNum = 1;
-            }
-            else
-            {
-                opponentNum = 0;
-            }
-            return history[moveNum - 1].substring(opponentNum, opponentNum + 1);
+            return "d";
         }
         else
         {
             return "c";
         }
+    }
+    public String getAuthor()
+    {
+        return "Mr. Fottrell";
+    }
+    public String toString()
+    {
+        return "Cooperates on the first round. After that it does whatever the opponent did\n" +
+               "on the previous turn.";
     }
 }

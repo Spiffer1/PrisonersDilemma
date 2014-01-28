@@ -1,12 +1,18 @@
-public class Generous implements Player
+public class Generous implements PDPlayer
 {
-    private int playerNum;
-    public Generous(int num)
+    public Generous()
     {
-        playerNum = num;
     }
-    public String pickMove(String[] history, int moveNum)
+    public String chooseCorD(String opponentsLastMove)
     {
         return "c";
+    }
+    public String getAuthor()
+    {
+        return "Mr. Fottrell";
+    }
+    public String toString()
+    {
+        return "Always cooperates.";
     }
 }

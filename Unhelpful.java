@@ -1,13 +1,19 @@
-public class Unhelpful implements Player
+public class Unhelpful implements PDPlayer
 {
-    private int playerNum;
-    public Unhelpful(int num)
+    public Unhelpful()
     {
-        playerNum = num;
     }
-    public String pickMove(String[] history, int moveNum)
+    public String chooseCorD(String opponentsLastMove)
     {
         return "d";
+    }
+    public String getAuthor()
+    {
+        return "Mr. Fottrell";
+    }
+    public String toString()
+    {
+        return "Always defects.";
     }
 }
 
