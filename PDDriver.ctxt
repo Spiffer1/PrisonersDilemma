@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
-comment0.text=\ \n\ We\ look\ in\ the\ current\ directory\ for\ a\ directory\ named\ 'plugins'.\ \ If\ that\ directory\n\ contains\ any\ .class\ files,\ we\ dynamically\ load\ them\ into\ ArrayList\ playerList.\ We\ then\n\ test\ them\ to\ see\ if\ they\ implement\ the\ PDPlayer\ inteface.\ If\ not,\ we\ remove\ them\ from\n\ the\ playerList.\n
+comment0.text=\ \n\ We\ look\ in\ the\ current\ directory\ for\ a\ directory\ named\ 'plugins'.\ \ If\ that\ directory\n\ contains\ any\ .class\ files,\ we\ dynamically\ load\ them\ into\ ArrayList\ playerList.\ We\ then\n\ test\ them\ to\ see\ if\ they\ implement\ the\ PDPlayer\ interface.\ If\ not,\ we\ remove\ them\ from\n\ the\ playerList.\n
 comment1.params=pluginsDir\ classFileList
 comment1.target=java.util.ArrayList\ getClasses(java.io.File,\ java.io.File[])
 comment1.text=\n\ Returns\ an\ ArrayList\ of\ Java\ Class\ objects\ that\ exist\ in\ the\ directory\ "pluginsDir"\n

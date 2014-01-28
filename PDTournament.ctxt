@@ -1,9 +1,12 @@
 #BlueJ class context
-comment0.params=
-comment0.target=PDTournament()
+comment0.params=numPlayers_
+comment0.target=PDTournament(int)
 comment1.params=playerList
 comment1.target=void\ run(java.util.ArrayList)
 comment2.params=theClass\ theMethod\ player\ opponentsLastMove
 comment2.target=java.lang.String\ invokeMethod(java.lang.Class,\ java.lang.String,\ java.lang.Object,\ java.lang.String)
 comment2.text=\n\ Invokes\ the\ method\ 'theMethod'\ from\ the\ class\ 'theClass'\ in\ Object\ instance\n
-numComments=3
+comment3.params=theClass\ theMethod\ player
+comment3.target=java.lang.String\ invokeMethod(java.lang.Class,\ java.lang.String,\ java.lang.Object)
+comment3.text=\n\ Invokes\ the\ method\ 'theMethod'\ from\ the\ class\ 'theClass'\ in\ Object\ instance\n
+numComments=4

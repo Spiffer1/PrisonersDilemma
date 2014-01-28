@@ -1,9 +1,9 @@
 /*
- * chooseCorD() method returns an "e" instead of a "c".
+ * does not implement PDPlayer
  */
-public class BrokenPlayer1 implements PDPlayer
+public class BrokenPlayer2
 {
-    public BrokenPlayer1()
+    public BrokenPlayer2()
     {
     }
     public String chooseCorD(String opponentsLastMove)
@@ -14,7 +14,7 @@ public class BrokenPlayer1 implements PDPlayer
         }
         else
         {
-            return "e";
+            return "c";
         }
     }
     public String getAuthor()
@@ -27,4 +27,5 @@ public class BrokenPlayer1 implements PDPlayer
                "on the previous turn.";
     }
 }
+
 

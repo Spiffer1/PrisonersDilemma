@@ -11,7 +11,7 @@ public class PDDriver
     /* 
      * We look in the current directory for a directory named 'plugins'.  If that directory
      * contains any .class files, we dynamically load them into ArrayList playerList. We then
-     * test them to see if they implement the PDPlayer inteface. If not, we remove them from
+     * test them to see if they implement the PDPlayer interface. If not, we remove them from
      * the playerList.
      */
     public static void main(String[] args)
@@ -41,18 +41,18 @@ public class PDDriver
         {
             if (PDPlayer.class.isAssignableFrom(playerList.get(i)) == false)
             {
+                System.out.println("Class does not implement PDPlayer interface: Removing " + playerList.get(i) );
                 removals[numToRemove] = i;
                 numToRemove++;
             }
         }
-        System.out.println("Remove this many: " + numToRemove);
         for (int i = numToRemove - 1; i >= 0; i--)
         {
-            playerList.remove(i);
+            playerList.remove(removals[i]);
         }
-        System.out.println("Array now has " + playerList.size() + " classes");
-
-        PDTournament tourney = new PDTournament();
+        System.out.println("Array now has " + playerList.size() + " classes.\n");
+        
+        PDTournament tourney = new PDTournament(playerList.size());
         tourney.run(playerList);
     }
 
@@ -71,7 +71,7 @@ public class PDDriver
                 ClassParser classParser = new ClassParser(classFile.getAbsolutePath());
                 JavaClass javaClass = classParser.parse();
                 String className = javaClass.getClassName();
-                System.out.println(String.format("The class name is '%s'.", className));
+                System.out.println(String.format("Class name added: '%s'.", className));
                 Class<?> theClass = classLoader.loadClass(className);
                 result.add(theClass);
             }
