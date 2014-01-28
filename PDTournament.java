@@ -8,7 +8,7 @@ public class PDTournament
     final int PUNISHMENT = 0;
     final int TEMPTATION = 2;
     final int SUCKER = -1;
-    final int NUMROUNDS = 3;  // each round consists of two plays
+    final int NUMROUNDS = 200;  // each round consists of two plays
     private PlayerRecord[] player;
 
     public PDTournament()
